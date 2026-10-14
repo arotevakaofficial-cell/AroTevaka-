@@ -1,0 +1,71 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aro Tevaka</title>
+  <style>
+    body {
+      margin: 0;
+      background: #062b45;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      padding: 25px 10px;
+      background: #087e8b;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 10px;
+    }
+    .island {
+      font-size: 70px;
+      margin: 35px 0 15px;
+    }
+    p {
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    button {
+      background: #ffd166;
+      color: #062b45;
+      border: none;
+      border-radius: 12px;
+      padding: 15px 30px;
+      margin: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #message {
+      min-height: 50px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌴 ARO TEVAKA 🌊</h1>
+    <p>Your island adventure begins!</p>
+  </header>
+
+  <div class="island">🏝️</div>
+
+  <h2>Welcome, Explorer!</h2>
+  <p>Discover the islands, explore the ocean,
+     and begin your adventure in the Pacific.</p>
+
+  <button onclick="startGame()">START ADVENTURE</button>
+
+  <p id="message">Ready to explore?</p>
+
+  <script>
+    function startGame() {
+      document.getElementById("message").textContent =
+        "Your adventure has begun! 🌊 Explore the beautiful islands!";
+    }
+  </script>
+</body>
+</html>
